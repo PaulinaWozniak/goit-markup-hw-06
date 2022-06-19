@@ -454,12 +454,51 @@
         </li>
       </ul>
     </div>
+    <section class="newsletter">
+      <h3 class="join-us"> Zapisz się do newslettera </h3>
+      <form class="news-item">
+        <input type="email" class="news-email" placeholder="E-mail">
+        <button type="submit" class="news-sign"> Zapisz się <svg>
+          <use href="./images/icons.svg#icon-send" width="20" height="20"></use>
+        </svg>
+      </button>
+      </form>
+    </section>
     </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>X</button>
-        <form name="dane" autocomplete="on" novalidate></form>
+        <button type="button" class="close-btn" data-modal-close>
+          <a class="close" href="#">
+            <svg class="close-x">
+              <use href="./images/icons.svg#icon-x"></use>
+            </svg>
+          </a>
+        </button>
+        <form name="dane" autocomplete="on" novalidate>
+          <p class="form-head">Zostaw swoje dane w formularzu poniżej</p>
+        
+            <label>
+            Imie
+            <input type="name" name="name"/>
+            <svg class="form-icon">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </label>
+        
+          <label>
+            Telefon
+            <input type="phone" name="phone"/>
+          </label>
+          <label>
+            E-mail 
+            <input type="mail" name="mail"/>
+          </label>
+          <label>
+            Komentarz
+            <textarea name="feedback" placeholder="Wprowadź tekst"></textarea>
+          </label>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
