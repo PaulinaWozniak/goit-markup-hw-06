@@ -481,42 +481,43 @@
           <p class="form-head">Zostaw swoje dane w formularzu poniżej</p>
            
             <label class="form-text">Imie
+              <input class="text-type" type="name" name="name" required>
               <svg class="form-icon">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
-              <input class="text-type" type="name" name="name"/>
+            </input>
             </label>
 
           <label class="form-text">Telefon
             <svg class="form-icon">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
-            <input class="text-type" type="phone" name="phone"/>
+            <input class="text-type" type="phone" name="phone" required/>
           </label>
 
           <label class="form-text">E-mail 
             <svg class="form-icon">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
-            <input class="text-type" type="mail" name="mail"/>
+            <input class="text-type" type="mail" name="mail" required/>
           </label>
 
           <label class="form-text">Komentarz
             <textarea name="feedback" placeholder="Wprowadź tekst"></textarea>
           </label>
        
-        <form class="modal-form">
-          <input class="modal-form-policy visually-hidden" id="user-policy" type="checkbox" name="policy"/>
+          <input class="modal-form-policy visually-hidden" id="user-policy" type="checkbox" name="policy" required/>
           <label for="user-policy" class="modal-form-policy-text">
             Oświadczam iż akceptuję 
             <a class="link" href="statute">Regulamin </a> i
             <a class="link" href="policy">Politykę Prywatności</a>.
           </label>
-        </form>
+       <form>
           <label class="send-btn">
             <button type="submit" class="send"> Wyślij
                </button>
           </label>
+       </form>
         </form>
       </div>
     </div>

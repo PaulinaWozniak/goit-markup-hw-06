@@ -734,7 +734,9 @@ label {
 .text-type:focus-within{
   border-color: #2196f3;
 }
-
+.text-type:required {
+  border-color: none;
+}
 textarea {
   resize: none;
   padding-bottom: 20px;
@@ -751,23 +753,27 @@ border-color: #2196F3;
 }
 
 .form-icon {
+  display: flex;
   position: absolute;
   top: 50%;
   left: 52px;
   width: 18px;
   height: 18px;
   outline: none;
+  
 }
 
-.form-icon :focus-within {
+.form-icon:hover,
+.form-icon:focus{
   fill:#2196f3;
+  
+  
 }
+
 
 /* CHECKBOX */
-.modal-form {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
+.modal-form-policy:required{
+  border-color: none;
 }
 .modal-form-policy-text{
   display: inline-block;
